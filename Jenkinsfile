@@ -1,6 +1,7 @@
 pipeline {
-  agent any
-
+  agent { 
+    label 'goleng' 
+    }
   stages {
     stage('Build') {
       steps {
