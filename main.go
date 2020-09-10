@@ -37,7 +37,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
     http.HandleFunc("/", handler)
-    log.Fatal(http.ListenAndServe(":7000", nil))
+    log.Fatal(http.ListenAndServe(":5000", nil))
 }
 
 func sum (a, b int) int {
